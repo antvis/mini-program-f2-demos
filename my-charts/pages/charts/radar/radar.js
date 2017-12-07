@@ -1,5 +1,4 @@
-const F2 = require('../../../util/f2');
-const F2Render = require('../../../util/render');
+import MyF2 from '@antv/my-f2';
 const app = getApp();
 
 Page({
@@ -19,8 +18,10 @@ Page({
       {name: '关羽',props: '忠诚', value: 99}
     ];
 
-    const chart = new F2.Chart({
-      el: new F2Render(my.createCanvasContext('canvas'), 600, 600)
+    const chart = new MyF2.Chart({
+      el: my.createCanvasContext('canvas'),
+      width: 600,
+      height: 600
     });
 
     chart.coord('polar');

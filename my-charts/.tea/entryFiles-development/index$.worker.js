@@ -1,12 +1,15 @@
-import './config$';
+require('./config$');
 
-import '../..//app';
-import '../..//pages/index/index';
-import '../..//pages/charts/dot/dot';
-import '../..//pages/charts/line/line';
-import '../..//pages/charts/area/area';
-import '../..//pages/charts/bar/bar';
-import '../..//pages/charts/pie/pie';
-import '../..//pages/charts/radar/radar';
-import '../..//pages/charts/k/k';
-import '../..//pages/charts/doubleY/doubleY';
+function success() {
+require('../..//app');
+require('../..//pages/index/index');
+require('../..//pages/charts/dot/dot');
+require('../..//pages/charts/line/line');
+require('../..//pages/charts/area/area');
+require('../..//pages/charts/bar/bar');
+require('../..//pages/charts/pie/pie');
+require('../..//pages/charts/radar/radar');
+require('../..//pages/charts/k/k');
+require('../..//pages/charts/doubleY/doubleY');
+}
+self.bootstrapApp ? self.bootstrapApp({ success }) : success();

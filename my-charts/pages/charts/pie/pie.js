@@ -1,5 +1,4 @@
-const F2 = require('../../../util/f2');
-const F2Render = require('../../../util/render');
+import MyF2 from '@antv/my-f2';
 const app = getApp();
 
 Page({
@@ -17,8 +16,10 @@ Page({
       {a: '1', b: 0.4, c: '3'}
     ];
 
-    const chart = new F2.Chart({
-      el: new F2Render(my.createCanvasContext('pie'), 300, 200),
+    const chart = new MyF2.Chart({
+      el: my.createCanvasContext('pie'),
+      width: 600,
+      height: 300
     });
 
     chart.source(data);
@@ -39,8 +40,10 @@ Page({
         {a: '1', b: 0.4, c: '3'}
     ];
 
-    const chart = new F2.Chart({
-        el: new F2Render(my.createCanvasContext('ring'), 300, 200)
+    const chart = new MyF2.Chart({
+      el: my.createCanvasContext('ring'),
+      width: 600,
+      height: 300
     });
 
     chart.source(data);
@@ -63,8 +66,10 @@ Page({
         {"tem":4,"city":"newYork"},
         {"tem":3,"city":"berlin"}
       ];
-    const chart = new F2.Chart({
-      el: new F2Render(my.createCanvasContext('rose'), 300, 200)
+    const chart = new MyF2.Chart({
+      el: my.createCanvasContext('rose'),
+      width: 600,
+      height: 300
     });
 
     chart.source(data, {
@@ -92,8 +97,10 @@ Page({
       {a: '2', b: 0.5, c: '2'},
       {a: '3', b: 0.6, c: '2'}
     ];
-    const chart = new F2.Chart({
-      el: new F2Render(my.createCanvasContext('cascade'), 300, 200)
+    const chart = new MyF2.Chart({
+      el: my.createCanvasContext('cascade'),
+      width: 600,
+      height: 300
     });
 
     chart.source(data);

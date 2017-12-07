@@ -1,24 +1,32 @@
 <view class="container">
   <canvas
     id="pie"
-    class="canvas"
+    width=600
+    height=300
+    style="width: 300px;height: 150px;"
   />
 </view>
 <view>
   <canvas
     id="ring"
-    class="canvas"
+    width=600
+    height=300
+    style="width: 300px;height: 150px;"
   />
 </view>
 <view>
   <canvas
     id="rose"
-    class="canvas"
+    width=600
+    height=300
+    style="width: 300px;height: 150px;"
   />
 </view>
 <view>
   <canvas
     id="cascade"
-    class="canvas"
+    width=600
+    height=300
+    style="width: 300px;height: 150px;"
   />
 </view>
