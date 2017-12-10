@@ -1,5 +1,4 @@
 import MyF2 from '@antv/my-f2';
-//import MyF2 from '../../../my-f2';
 const app = getApp();
 
 Page({
@@ -68,7 +67,9 @@ Page({
         .shape('smooth')
         .style({
         opacity: 0.6
-        });
+    });
+    chart.line().position('time*tem').color('#000')
+        .shape('smooth');
     chart.render();
   }
 });

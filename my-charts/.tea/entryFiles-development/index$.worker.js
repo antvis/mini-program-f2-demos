@@ -12,5 +12,6 @@ require('../..//pages/charts/radar/radar');
 require('../..//pages/charts/k/k');
 require('../..//pages/charts/doubleY/doubleY');
 require('../..//pages/charts/gradient/gradient');
+require('../..//pages/charts/html/html');
 }
 self.bootstrapApp ? self.bootstrapApp({ success }) : success();

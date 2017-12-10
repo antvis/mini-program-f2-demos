@@ -9,7 +9,8 @@
     "pages/charts/radar/radar",
     "pages/charts/k/k",
     "pages/charts/doubleY/doubleY",
-    "pages/charts/gradient/gradient"
+    "pages/charts/gradient/gradient",
+    "pages/charts/html/html"
   ],
   "window": {
     "defaultTitle": "F2 charts in miniApp"

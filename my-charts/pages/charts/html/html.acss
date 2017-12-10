@@ -1,0 +1,5 @@
+@import "@alipay/my-wxParse/es/wxParse.acss";
+
+.sus-h2{
+    color: red;
+}
