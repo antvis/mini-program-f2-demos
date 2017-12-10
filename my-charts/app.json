@@ -8,7 +8,8 @@
     "pages/charts/pie/pie",
     "pages/charts/radar/radar",
     "pages/charts/k/k",
-    "pages/charts/doubleY/doubleY"
+    "pages/charts/doubleY/doubleY",
+    "pages/charts/gradient/gradient"
   ],
   "window": {
     "defaultTitle": "F2 charts in miniApp"

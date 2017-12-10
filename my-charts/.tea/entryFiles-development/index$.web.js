@@ -8,3 +8,4 @@ require('../..//pages/charts/pie/pie');
 require('../..//pages/charts/radar/radar');
 require('../..//pages/charts/k/k');
 require('../..//pages/charts/doubleY/doubleY');
+require('../..//pages/charts/gradient/gradient');

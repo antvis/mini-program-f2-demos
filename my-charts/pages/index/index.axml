@@ -7,4 +7,5 @@
     <view onTap="gotoPage" data-page="radar" class="list-item">Radar Chart</view>
     <view onTap="gotoPage" data-page="k" class="list-item">K Chart</view>
     <view onTap="gotoPage" data-page="doubleY" class="list-item">双 Y 轴</view>
+    <view onTap="gotoPage" data-page="gradient" class="list-item">渐变色</view>
 </view>
