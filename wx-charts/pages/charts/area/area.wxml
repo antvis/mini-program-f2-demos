@@ -1,0 +1,7 @@
+<view class="container">
+  <canvas
+    canvas-id="canvas"
+    class="canvas"
+    bindtouchstart="click"
+  />
+</view>

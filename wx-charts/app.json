@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/charts/dot/dot",
+    "pages/charts/line/line",
+    "pages/charts/area/area",
+    "pages/charts/bar/bar",
+    "pages/charts/pie/pie",
+    "pages/charts/radar/radar",
+    "pages/charts/k/k",
+    "pages/charts/doubleY/doubleY"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "F2 Charts Demo",
+    "navigationBarTextStyle": "black"
+  }
+}
