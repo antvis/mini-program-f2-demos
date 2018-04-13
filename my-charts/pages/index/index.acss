@@ -7,4 +7,5 @@
     line-height: 80rpx;
     text-indent: 30rpx;
     border-bottom: 2rpx solid #cccccc; 
+    width: 100%;
 }

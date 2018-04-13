@@ -1,0 +1,8 @@
+<view class="container">
+  <canvas
+    id="radar"
+    onTouchStart="touchStart"
+    onTouchMove="touchMove"
+    onTouchEnd="touchEnd"
+  />
+</view>

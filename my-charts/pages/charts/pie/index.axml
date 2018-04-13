@@ -1,0 +1,8 @@
+<view class="container">
+  <canvas
+    id="pie"
+    onTouchStart="touchStart"
+    onTouchMove="touchMove"
+    onTouchEnd="touchEnd"
+  />
+</view>

@@ -1,12 +1,8 @@
 <view class="container">
-    <view onTap="gotoPage" data-page="line" class="mt40 list-item">Line Chart</view>
-    <view onTap="gotoPage" data-page="dot" class="list-item">Dot Chart</view>
-    <view onTap="gotoPage" data-page="area" class="list-item">Area Chart</view>
-    <view onTap="gotoPage" data-page="bar" class="list-item">Bar/Column Chart</view>
-    <view onTap="gotoPage" data-page="pie" class="list-item">Pie Chart</view>
-    <view onTap="gotoPage" data-page="radar" class="list-item">Radar Chart</view>
-    <view onTap="gotoPage" data-page="k" class="list-item">K Chart</view>
-    <view onTap="gotoPage" data-page="doubleY" class="list-item">双 Y 轴</view>
-    <view onTap="gotoPage" data-page="gradient" class="list-item">渐变色</view>
-    <view onTap="gotoPage" data-page="html" class="list-item">HTML</view>
+  <view a:for="{{charts}}" a:for-item="chart" a:key="{{chart.name}}" 
+    data-page="{{chart.name}}"  
+    onTap="gotoPage"
+    class="list-item">
+    {{chart.value}}
+  </view>
 </view>

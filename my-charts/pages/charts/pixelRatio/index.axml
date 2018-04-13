@@ -1,0 +1,11 @@
+<view class="container">
+  <!-- 设置精度为 2 -->
+  <canvas
+    id="pixelRatio"
+    onTouchStart="touchStart"
+    onTouchMove="touchMove"
+    onTouchEnd="touchEnd"
+    width="600" height="600"
+    style="width: 300px;height:300px;"
+  />
+</view>

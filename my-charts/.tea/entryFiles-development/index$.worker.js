@@ -3,15 +3,17 @@ require('./config$');
 function success() {
 require('../..//app');
 require('../..//pages/index/index');
-require('../..//pages/charts/dot/dot');
-require('../..//pages/charts/line/line');
-require('../..//pages/charts/area/area');
-require('../..//pages/charts/bar/bar');
-require('../..//pages/charts/pie/pie');
-require('../..//pages/charts/radar/radar');
-require('../..//pages/charts/k/k');
-require('../..//pages/charts/doubleY/doubleY');
-require('../..//pages/charts/gradient/gradient');
-require('../..//pages/charts/html/html');
+require('../..//pages/charts/line/index');
+require('../..//pages/charts/area/index');
+require('../..//pages/charts/column/index');
+require('../..//pages/charts/dodge/index');
+require('../..//pages/charts/stackBar/index');
+require('../..//pages/charts/ring/index');
+require('../..//pages/charts/pie/index');
+require('../..//pages/charts/rose/index');
+require('../..//pages/charts/radar/index');
+require('../..//pages/charts/gauge/index');
+require('../..//pages/charts/double-axis/index');
+require('../..//pages/charts/pixelRatio/index');
 }
 self.bootstrapApp ? self.bootstrapApp({ success }) : success();

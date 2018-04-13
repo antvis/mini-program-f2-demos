@@ -1,8 +1,0 @@
-<view class="container">
-  <canvas
-    id="canvas"
-    class="canvas"
-    width=600
-    height=600
-  />
-</view>
