@@ -1,5 +1,4 @@
 <view class="container">
-  <!-- 设置精度为 2 -->
   <canvas
     id="pixelRatio"
     onTouchStart="touchStart"
