@@ -33,7 +33,7 @@ function drawChart(canvas, width, height) {
   chart.interval().position('season*value')
     .color('value', val => {
       return val > 0 ? '#FC674D' : '#9AC2AB';
-    }).size(80);
+    });
 
   // 辅助元素
   data.forEach(function(obj, index) {
@@ -77,7 +77,17 @@ Page({
       .select('#bar')
       .boundingClientRect()
       .exec((res) => {
+        // 获取分辨率
+        const pixelRatio = my.getSystemInfoSync().pixelRatio;
+        // 获取画布实际宽高
+        const canvasWidth = res[0].width;
+        const canvasHeight = res[0].height;
+        this.setData({
+          width: canvasWidth * pixelRatio,
+          height: canvasHeight * pixelRatio
+        });
         const myCtx = my.createCanvasContext('bar');
+        myCtx.scale(pixelRatio, pixelRatio); // 必要！按照设置的分辨率进行放大
         const canvas = new F2.Renderer(myCtx);
         this.canvas = canvas;
         drawChart(canvas, res[0].width, res[0].height);
