@@ -51,9 +51,10 @@ Page({
       .exec((res) => {
         // 获取分辨率
         const pixelRatio = my.getSystemInfoSync().pixelRatio;
-        // 获取画布实际宽高
+        // 获取画布 css 宽高
         const canvasWidth = res[0].width;
         const canvasHeight = res[0].height;
+        // 将画布自身的宽高方法相应的倍数
         this.setData({
           width: canvasWidth * pixelRatio,
           height: canvasHeight * pixelRatio
