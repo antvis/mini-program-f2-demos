@@ -17,8 +17,7 @@ function drawChart(canvas, width, height) {
   chart = new F2.Chart({
     el: canvas,
     width,
-    height,
-    pixelRatio: 2
+    height
   });
 
   chart.source(data, {
@@ -49,6 +48,7 @@ Page({
       .boundingClientRect()
       .exec((res) => {
         const myCtx = my.createCanvasContext('pixelRatio');
+        myCtx.scale(2, 2); // 按照设置的分辨率进行放大
         const canvas = new F2.Renderer(myCtx);
         this.canvas = canvas;
         drawChart(canvas, res[0].width, res[0].height);
