@@ -43,15 +43,26 @@ function drawChart(canvas, width, height) {
 Page({
   data: {},
   onReady() {
+    const self = this;
+  
     my.createSelectorQuery()
       .select('#pixelRatio')
       .boundingClientRect()
       .exec((res) => {
+        // 获取分辨率
+        const pixelRatio = my.getSystemInfoSync().pixelRatio;
+        // 获取画布实际宽高
+        const canvasWidth = res[0].width;
+        const canvasHeight = res[0].height;
+        this.setData({
+          width: canvasWidth * pixelRatio,
+          height: canvasHeight * pixelRatio
+        });
         const myCtx = my.createCanvasContext('pixelRatio');
-        myCtx.scale(2, 2); // 按照设置的分辨率进行放大
+        myCtx.scale(pixelRatio, pixelRatio); // 必要！按照设置的分辨率进行放大
         const canvas = new F2.Renderer(myCtx);
         this.canvas = canvas;
-        drawChart(canvas, res[0].width, res[0].height);
+        drawChart(canvas, canvasWidth, canvasHeight);
       });
   },
   touchStart(e) {
