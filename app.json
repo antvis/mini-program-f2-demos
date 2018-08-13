@@ -1,0 +1,27 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/charts/line/index",
+    "pages/charts/area/index",
+    "pages/charts/column/index",
+    "pages/charts/bar/index",
+    "pages/charts/dodge/index",
+    "pages/charts/dodge-bar/index",
+    "pages/charts/negative-column/index",
+    "pages/charts/stack-column/index",
+    "pages/charts/stackBar/index",
+    "pages/charts/ring/index",
+    "pages/charts/pie/index",
+    "pages/charts/rose/index",
+    "pages/charts/radar/index",
+    "pages/charts/gauge/index",
+    "pages/charts/double-axis/index",
+    "pages/charts/selection-for-bar-chart/index",
+    "pages/charts/selection-for-pie-chart/index",
+    "pages/charts/pan-bar-chart/index",
+    "pages/charts/pan-line-chart/index"
+  ],
+  "window": {
+    "defaultTitle": "F2 charts in miniApp"
+  }
+}

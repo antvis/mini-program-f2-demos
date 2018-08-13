@@ -1,0 +1,23 @@
+/**index.acss**/
+.mt40 {
+    margin-top: 40rpx;
+}
+.list-item {
+    height: 80rpx;
+    line-height: 80rpx;
+    text-indent: 40rpx;
+    border-bottom: 2rpx solid #cccccc; 
+    width: 100%;
+}
+
+.title {
+    color: #999;
+    font-weight: bold;  
+    text-indent: 15rpx;  
+    height: 80rpx;
+    line-height: 80rpx;
+    margin-bottom: 10rpx;
+    text-align: left;
+    width: 100%;
+    border-bottom: 2rpx solid #cccccc;   
+}

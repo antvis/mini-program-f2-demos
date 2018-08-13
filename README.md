@@ -1,20 +1,16 @@
-# miniapp-f2-demos
+# 支付宝小程序 F2 图表 demo
 
-小程序端的 F2 图表 demo，包括微信小程序和支付宝小程序。
+支付宝小程序端的 F2 图表 demo，微信小程序详见 [wx-f2](https://github.com/antvis/wx-f2)。
 
-主要对小程序的画布上下文和 html5 canvas 的上下文进行了适配以支持 F2 在小程序端的渲染，所以 F2 能绘制什么图表，小程序端就能绘制什么。demo 只展示了部分，更全的见 [AntV F2](https://antv.alipay.com/zh-cn/f2/3.x/index.html)。
+## 如何使用
 
-
-可直接在[微信](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html) / [蚂蚁](https://docs.alipay.com/mini/ide/download)开发工具中运行。
-
-| [微信小程序](https://github.com/antvis/miniapp-f2-demos/blob/master/wx-charts)  | [蚂蚁小程序](https://github.com/antvis/miniapp-f2-demos/blob/master/my-charts)  |
-| -------- | -------- |
-|<img src="https://gw.alipayobjects.com/zos/rmsportal/ARZdJXUcDvqUHvtzvyVv.png"> | <img src="https://gw.alipayobjects.com/zos/rmsportal/hYYugpKVShKPpAVFrBaf.png">     |
+支付宝开发者工具（最新版）中打开。
 
 
-#### TODO
+## 说明
 
-- [ ] 动画
-- [ ] 交互（图例、tooltip 等）
+例子中均使用本地的 my-f2.js（1.1.0-beta.1 版本），你也可是使用 `@antv/my-f2`，图表的交互 demo 需要基于 1.1.0-beta.1 版本。
+
+my-f2 GitHub 地址：[my-f2](https://github.com/antvis/my-f2) 
 
 

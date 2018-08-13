@@ -1,0 +1,17 @@
+<view class="container">
+  <text class="title">图表交互示例</text>
+  <view a:for="{{interactions}}" a:for-item="interaction" a:key="{{interaction.name}}" 
+    data-page="{{interaction.name}}"  
+    onTap="gotoPage"
+    class="list-item">
+    {{interaction.value}}
+  </view>
+
+  <text class="title">基础图表示例</text>
+  <view a:for="{{charts}}" a:for-item="chart" a:key="{{chart.name}}" 
+    data-page="{{chart.name}}"  
+    onTap="gotoPage"
+    class="list-item">
+    {{chart.value}}
+  </view>
+</view>

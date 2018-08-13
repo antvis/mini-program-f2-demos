@@ -1,8 +1,0 @@
-<view class="container">
-  <view a:for="{{charts}}" a:for-item="chart" a:key="{{chart.name}}" 
-    data-page="{{chart.name}}"  
-    onTap="gotoPage"
-    class="list-item">
-    {{chart.value}}
-  </view>
-</view>

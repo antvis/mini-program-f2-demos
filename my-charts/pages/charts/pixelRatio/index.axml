@@ -1,9 +1,0 @@
-<view class="container">
-  <canvas
-    id="pixelRatio"
-    onTouchStart="touchStart"
-    onTouchMove="touchMove"
-    onTouchEnd="touchEnd"
-    width="{{width}}" height="{{height}}"
-  />
-</view>

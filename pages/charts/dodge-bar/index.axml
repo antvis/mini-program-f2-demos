@@ -1,0 +1,9 @@
+<view class="container">
+  <canvas
+    id="dodgeBar"
+    onTouchStart="touchStart"
+    onTouchMove="touchMove"
+    onTouchEnd="touchEnd"
+    width="{{width}}" height="{{height}}"
+  />
+</view>

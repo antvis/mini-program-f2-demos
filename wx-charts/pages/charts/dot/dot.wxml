@@ -1,6 +1,0 @@
-<view class="container">
-  <canvas
-    canvas-id="canvas"
-    class="canvas"
-  />
-</view>
