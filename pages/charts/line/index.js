@@ -1,4 +1,9 @@
-import F2 from '../../../lib/my-f2';
+// import F2 from '@antv/my-f2';
+// 按需引入 F2 模块
+import F2 from '@antv/my-f2/lib/core';
+require('@antv/f2/lib/geom/line');
+require('@antv/f2/lib/scale/time-cat');
+const Tooltip = require('@antv/f2/lib/plugin/tooltip');
 const app = getApp();
 
 let chart = null;
@@ -59,7 +64,8 @@ function drawChart(canvas, width, height) {
   chart = new F2.Chart({
     el: canvas,
     width,
-    height
+    height,
+    plugins: Tooltip
   });
 
   chart.source(data, {

@@ -4,13 +4,20 @@
 
 ## 如何使用
 
-支付宝开发者工具（最新版）中打开。
+支付宝开发者工具（最新版）中打开，然后在项目根目录下安装 '@antv/my-f2' 模块。
+
+也可以直接使用本地的 `my-f2.js`，在 `./lib/` 目录下。
 
 
 ## 说明
 
-例子中均使用本地的 my-f2.js（1.1.0-beta.1 版本），你也可是使用 `@antv/my-f2`，图表的交互 demo 需要基于 1.1.0-beta.1 版本。
+1. my-f2 GitHub 地址：[my-f2](https://github.com/antvis/my-f2) 
+2. 如果项目对代码大小有要求，可以使用按需加载模块，只引入需要的模块，参加折线图 demo: `pages/charts/line/index.js`
 
-my-f2 GitHub 地址：[my-f2](https://github.com/antvis/my-f2) 
-
+```js
+import F2 from '@antv/my-f2/lib/core'; // 必须引入
+require('@antv/f2/lib/geom/line'); // 只引入折线图
+require('@antv/f2/lib/scale/time-cat'); // 时间类型的度量
+const Tooltip = require('@antv/f2/lib/plugin/tooltip'); // 引入 tooltip 插件
+```
 

@@ -1,4 +1,4 @@
-import F2 from '../../../lib/my-f2';
+import F2 from '@antv/my-f2';
 const app = getApp();
 
 let chart = null;
