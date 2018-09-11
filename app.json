@@ -15,11 +15,7 @@
     "pages/charts/rose/index",
     "pages/charts/radar/index",
     "pages/charts/gauge/index",
-    "pages/charts/double-axis/index",
-    "pages/charts/selection-for-bar-chart/index",
-    "pages/charts/selection-for-pie-chart/index",
-    "pages/charts/pan-bar-chart/index",
-    "pages/charts/pan-line-chart/index"
+    "pages/charts/double-axis/index"
   ],
   "window": {
     "defaultTitle": "F2 charts in miniApp"

@@ -1,9 +1,4 @@
-// import F2 from '@antv/my-f2';
-// 按需引入 F2 模块
-import F2 from '@antv/my-f2/lib/core';
-require('@antv/f2/lib/geom/line');
-require('@antv/f2/lib/scale/time-cat');
-const Tooltip = require('@antv/f2/lib/plugin/tooltip');
+import F2 from '../../../lib/my-f2.js';
 const app = getApp();
 
 let chart = null;
@@ -64,8 +59,7 @@ function drawChart(canvas, width, height) {
   chart = new F2.Chart({
     el: canvas,
     width,
-    height,
-    plugins: Tooltip
+    height
   });
 
   chart.source(data, {
@@ -111,17 +105,7 @@ Page({
       .select('#line')
       .boundingClientRect()
       .exec((res) => {
-        // 获取分辨率
-        const pixelRatio = my.getSystemInfoSync().pixelRatio;
-        // 获取画布实际宽高
-        const canvasWidth = res[0].width;
-        const canvasHeight = res[0].height;
-        this.setData({
-          width: canvasWidth * pixelRatio,
-          height: canvasHeight * pixelRatio
-        });
         const myCtx = my.createCanvasContext('line');
-        myCtx.scale(pixelRatio, pixelRatio); // 必要！按照设置的分辨率进行放大
         const canvas = new F2.Renderer(myCtx);
         this.canvas = canvas;
         drawChart(canvas, res[0].width, res[0].height);

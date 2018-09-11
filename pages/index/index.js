@@ -1,14 +1,14 @@
 Page({
     data: {
-        charts: [            
+        charts: [
             { name: 'line', value: '折线图' },
             { name: 'area', value: '区域图' },
             { name: 'column', value: '柱状图' },
             { name: 'dodge', value: '分组柱状图' },
             { name: 'stack-column', value: '层叠柱状图' },
-            { name: 'negative-column', value: '带负值的柱状图' },            
+            { name: 'negative-column', value: '带负值的柱状图' },
             { name: 'bar', value: '条形图' },
-            { name: 'dodge-bar', value: '分组条形图' },    
+            { name: 'dodge-bar', value: '分组条形图' },
             { name: 'stackBar', value: '层叠条形图' },
             { name: 'ring', value: '环图' },
             { name: 'pie', value: '饼图' },
@@ -16,12 +16,6 @@ Page({
             { name: 'radar', value: '雷达图' },
             { name: 'gauge', value: '仪表盘' },
             { name: 'double-axis', value: '双 Y 轴' }
-        ],
-        interactions: [
-            { name: 'selection-for-bar-chart', value: '柱状图选中交互' },            
-            { name: 'selection-for-pie-chart', value: '饼图选中交互' },
-            { name: 'pan-bar-chart', value: '柱状图平移交互' },
-            { name: 'pan-line-chart', value: '折线图平移交互' }
         ]
     },
     gotoPage: function(e) {
