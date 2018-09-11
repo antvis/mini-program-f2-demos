@@ -105,7 +105,9 @@ Page({
       .select('#line')
       .boundingClientRect()
       .exec((res) => {
-        const myCtx = my.createCanvasContext('line');
+        const myCtx = my.createCanvasContext('line', {
+          enableNative: true
+        });
         const canvas = new F2.Renderer(myCtx);
         this.canvas = canvas;
         drawChart(canvas, res[0].width, res[0].height);

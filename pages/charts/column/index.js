@@ -45,7 +45,9 @@ Page({
       .select('#column')
       .boundingClientRect()
       .exec((res) => {
-        const myCtx = my.createCanvasContext('column');
+        const myCtx = my.createCanvasContext('column', {
+          enableNative: true
+        });
         const canvas = new F2.Renderer(myCtx);
         this.canvas = canvas;
         drawChart(canvas, res[0].width, res[0].height);

@@ -100,7 +100,9 @@ Page({
       .select('#radar')
       .boundingClientRect()
       .exec((res) => {
-        const myCtx = my.createCanvasContext('radar');
+        const myCtx = my.createCanvasContext('radar', {
+          enableNative: true
+        });
         const canvas = new F2.Renderer(myCtx);
         this.canvas = canvas;
         drawChart(canvas, res[0].width, res[0].height);

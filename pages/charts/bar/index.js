@@ -55,7 +55,9 @@ Page({
       .select('#bar')
       .boundingClientRect()
       .exec((res) => {
-        const myCtx = my.createCanvasContext('bar');
+        const myCtx = my.createCanvasContext('bar', {
+          enableNative: true
+        });
         const canvas = new F2.Renderer(myCtx);
         this.canvas = canvas;
         drawChart(canvas, res[0].width, res[0].height);

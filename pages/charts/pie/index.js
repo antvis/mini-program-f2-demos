@@ -72,7 +72,9 @@ Page({
       .select('#pie')
       .boundingClientRect()
       .exec((res) => {
-        const myCtx = my.createCanvasContext('pie');
+        const myCtx = my.createCanvasContext('pie', {
+          enableNative: true
+        });
         const canvas = new F2.Renderer(myCtx);
         this.canvas = canvas;
         drawChart(canvas, res[0].width, res[0].height);

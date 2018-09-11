@@ -91,7 +91,9 @@ Page({
       .select('#stackBar')
       .boundingClientRect()
       .exec((res) => {
-        const myCtx = my.createCanvasContext('stackBar');
+        const myCtx = my.createCanvasContext('stackBar', {
+          enableNative: true
+        });
         const canvas = new F2.Renderer(myCtx);
         this.canvas = canvas;
         drawChart(canvas, res[0].width, res[0].height);

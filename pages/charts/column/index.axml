@@ -4,5 +4,6 @@
     onTouchStart="touchStart"
     onTouchMove="touchMove"
     onTouchEnd="touchEnd"
+    enableNative="true"
   />
 </view>

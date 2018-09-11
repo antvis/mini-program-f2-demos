@@ -40,7 +40,9 @@ Page({
       .select('#rose')
       .boundingClientRect()
       .exec((res) => {
-        const myCtx = my.createCanvasContext('rose');
+        const myCtx = my.createCanvasContext('rose', {
+          enableNative: true
+        });
         const canvas = new F2.Renderer(myCtx);
         this.canvas = canvas;
         drawChart(canvas, res[0].width, res[0].height);

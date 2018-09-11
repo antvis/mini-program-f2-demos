@@ -58,7 +58,9 @@ Page({
       .select('#ring')
       .boundingClientRect()
       .exec((res) => {
-        const myCtx = my.createCanvasContext('ring');
+        const myCtx = my.createCanvasContext('ring', {
+          enableNative: true
+        });
         const canvas = new F2.Renderer(myCtx);
         this.canvas = canvas;
         drawChart(canvas, res[0].width, res[0].height);

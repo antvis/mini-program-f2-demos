@@ -69,7 +69,9 @@ Page({
       .select('#dodge')
       .boundingClientRect()
       .exec((res) => {
-        const myCtx = my.createCanvasContext('dodge');
+        const myCtx = my.createCanvasContext('dodge', {
+          enableNative: true
+        });
         const canvas = new F2.Renderer(myCtx);
         this.canvas = canvas;
         drawChart(canvas, res[0].width, res[0].height);

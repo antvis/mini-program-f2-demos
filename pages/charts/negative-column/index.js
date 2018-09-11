@@ -72,7 +72,9 @@ Page({
       .select('#negativeColumn')
       .boundingClientRect()
       .exec((res) => {
-        const myCtx = my.createCanvasContext('negativeColumn');
+        const myCtx = my.createCanvasContext('negativeColumn', {
+          enableNative: true
+        });
         const canvas = new F2.Renderer(myCtx);
         this.canvas = canvas;
         drawChart(canvas, res[0].width, res[0].height);
