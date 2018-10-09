@@ -3,6 +3,7 @@
     "pages/index/index",
     "pages/charts/line/index",
     "pages/charts/area/index",
+    "pages/charts/gradient-area/index",
     "pages/charts/column/index",
     "pages/charts/bar/index",
     "pages/charts/dodge/index",

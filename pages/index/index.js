@@ -3,6 +3,7 @@ Page({
         charts: [
             { name: 'line', value: '折线图' },
             { name: 'area', value: '区域图' },
+            { name: 'gradient-area', value: '渐变色区域图' },
             { name: 'column', value: '柱状图' },
             { name: 'dodge', value: '分组柱状图' },
             { name: 'stack-column', value: '层叠柱状图' },
