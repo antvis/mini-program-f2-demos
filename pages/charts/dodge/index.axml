@@ -1,9 +1,6 @@
 <view class="container">
   <canvas
     id="dodge"
-    onTouchStart="touchStart"
-    onTouchMove="touchMove"
-    onTouchEnd="touchEnd"
     enableNative="true"
   />
 </view>

@@ -1,9 +1,6 @@
 <view class="container">
   <canvas
     id="column"
-    onTouchStart="touchStart"
-    onTouchMove="touchMove"
-    onTouchEnd="touchEnd"
     enableNative="true"
   />
 </view>

@@ -79,20 +79,5 @@ Page({
         this.canvas = canvas;
         drawChart(canvas, res[0].width, res[0].height);
       });
-  },
-  touchStart(e) {
-    if (this.canvas) {
-      this.canvas.emitEvent('touchstart', [e]);
-    }
-  },
-  touchMove(e) {
-    if (this.canvas) {
-      this.canvas.emitEvent('touchmove', [e]);
-    }
-  },
-  touchEnd(e) {
-    if (this.canvas) {
-      this.canvas.emitEvent('touchend', [e]);
-    }
   }
 });
