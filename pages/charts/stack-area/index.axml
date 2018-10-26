@@ -1,6 +1,6 @@
 <view class="container">
   <canvas
-    id="pieSelect"
+    id="stackArea"
     onTouchStart="touchStart"
     onTouchMove="touchMove"
     onTouchEnd="touchEnd"
