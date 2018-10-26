@@ -1,0 +1,6 @@
+<view class="container">
+  <canvas
+    id="stackArea"
+    enableNative="true"    
+  />
+</view>

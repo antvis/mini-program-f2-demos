@@ -1,9 +1,12 @@
 <view class="container">
-  <text class="title">基础图表示例</text>
-  <view a:for="{{charts}}" a:for-item="chart" a:key="{{chart.name}}"
-    data-page="{{chart.name}}"
-    onTap="gotoPage"
-    class="list-item">
-    {{chart.value}}
+  <view a:for="{{charts}}" a:for-item="chart" a:key="{{chart.name}}" class="list-item">
+    <image src="../../img/{{chart.name}}.png" data-page="{{chart.name}}" mode="aspectFit" onTap="gotoPage">
+    </image>     {{chart.value}}  
+  </view>
+  <view class="footer">
+    <text>更多示例，详见 AntV 官网
+    </text>
+    <text>https://antv.alipay.com/zh-cn/f2/3.x/index.html
+    </text>
   </view>
 </view>

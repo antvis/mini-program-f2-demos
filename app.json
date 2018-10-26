@@ -3,22 +3,21 @@
     "pages/index/index",
     "pages/charts/line/index",
     "pages/charts/area/index",
-    "pages/charts/gradient-area/index",
     "pages/charts/column/index",
     "pages/charts/bar/index",
     "pages/charts/dodge/index",
     "pages/charts/dodge-bar/index",
-    "pages/charts/negative-column/index",
     "pages/charts/stack-column/index",
-    "pages/charts/stackBar/index",
+    "pages/charts/stack-bar/index",
     "pages/charts/ring/index",
     "pages/charts/pie/index",
     "pages/charts/rose/index",
     "pages/charts/radar/index",
     "pages/charts/gauge/index",
-    "pages/charts/double-axis/index"
+    "pages/charts/double-axis/index",
+    "pages/charts/stack-area/index"
   ],
   "window": {
-    "defaultTitle": "F2 charts in miniApp"
+    "defaultTitle": "F2 小程序图表组件"
   }
 }

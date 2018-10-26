@@ -1,6 +1,0 @@
-<view class="container">
-  <canvas
-    id="negativeColumn"
-    enableNative="true"
-  />
-</view>
