@@ -1,6 +1,7 @@
 <view class="container">
   <canvas
     id="area"
+    disable-scroll=true
     onTouchStart="touchStart"
     onTouchMove="touchMove"
     onTouchEnd="touchEnd"
