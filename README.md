@@ -2,6 +2,8 @@
 
 支付宝小程序端的 F2 图表 demo，微信小程序详见 [wx-f2](https://github.com/antvis/wx-f2)。
 
+<img src="https://gw.alipayobjects.com/zos/rmsportal/ijCEZaxAPTGLsFdlwbGv.png" style="width: 375px;" />
+
 ## 如何使用
 
 支付宝开发者工具（最新版）中打开，然后在项目根目录下安装 '@antv/my-f2' 模块。
