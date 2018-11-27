@@ -1,0 +1,10 @@
+<view class="container">
+  <canvas
+    id="stock"
+    disable-scroll=true
+    onTouchStart="touchStart"
+    onTouchMove="touchMove"
+    onTouchEnd="touchEnd"
+    width="{{width}}" height="{{height}}"
+  />
+</view>

@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/charts/stock/index",
     "pages/charts/line/index",
     "pages/charts/area/index",
     "pages/charts/column/index",
