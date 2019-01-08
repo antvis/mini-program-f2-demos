@@ -27,4 +27,4 @@ require('@antv/f2/lib/scale/time-cat'); // 时间类型的度量
 const Tooltip = require('@antv/f2/lib/plugin/tooltip'); // 引入 tooltip 插件
 ```
 
-如何进行按需加载，请参见：https://antv.alipay.com/zh-cn/f2/3.x/tutorial/require-on-demand.html
+如何进行按需加载，请参见：https://www.yuque.com/antv/f2/require-on-demand
